@@ -205,13 +205,12 @@ a {
 .main-wrap {
 	background-color: @color-swatch1;
 	float: left;
-	width: 100%;
+	max-width: 1040px;
+	padding: 0 20px;
+	margin-left: 25%;
 }
 .main {
-	max-width: 1040px;
-	margin: 0 auto;
 	clear: both;
-	padding: 0 20px;
 }
 
 hr.line {
@@ -233,17 +232,19 @@ hr.line {
 	}
 	.widget.logo {
 		text-align: center;
-		margin-top: -75px;
 	}
 }
 
-.header-sub {
-	margin: 0 20px;
-	//max-width: 1040px;
+.template-feature {
+	position: fixed;
+	height: 100%;
+	width: 25%;
+	.widget.feature {
+		height: 100%;
+	}
 }
 
 .template-aside, .widget.logo {
-	width: 33.3%;
 	float: left;
 	.bk-content-text {
 		display: inline;
@@ -287,7 +288,6 @@ hr.line {
 .widget.feature .feature-bgimg .content {
 	display: block;
 	padding: 75px 20px 0 20px;
-	max-width: 1040px;
 	margin: 0 auto;
 }
 
@@ -295,7 +295,6 @@ hr.line {
 .nav {
 	font-family: 'Oswald', sans-serif;
 	position: relative;
-	padding: 0 20px;
 	ul {
 		display: block;
 		width: 100%;
@@ -322,11 +321,9 @@ hr.line {
 .widget .extendednavigation {
 	text-align: center;
 	border-top: 1px solid lighten(@font-swatch6-color, 20%);
-	margin: 0 20px;
 }
 
 .widget .extendednavigation ul {
-	max-width: 1040px;
 	margin: 0 auto;
 	float: none;
 	li {
@@ -825,18 +822,11 @@ input[type="search"]::-webkit-search-decoration {
 
 // 10. Footer
 .template-footer {
-	margin: 0 20px;
 	border-top: 1px solid darken(@color-swatch1, 10%);
 	clear: both;
 	.template-aside {
-		padding: 20px;
 		width: 50%;
 	}
-}
-
-.footer-content {
-	max-width: 1040px;
-	margin: 0 auto;
 }
 
 // 11. Misc
@@ -933,6 +923,3 @@ input[type="search"]::-webkit-search-decoration {
 		padding: 0 20px;
 	}
 }
-
-
-
