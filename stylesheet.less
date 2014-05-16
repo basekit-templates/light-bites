@@ -593,6 +593,7 @@ textarea,
 	-moz-transition: border .2s;
 	-ms-transition: border .2s;
 	transition: border .2s;
+	border-radius: 5px;
 	&:hover, &:focus {
 		border: 1px solid darken(@color-swatch1, 20%);
 	}
@@ -653,6 +654,19 @@ input[type="search"]::-webkit-search-decoration {
 	display: none;
 }
 
+::-webkit-input-placeholder {
+	color: darken(@color-swatch1, 30%);
+}
+:-moz-placeholder {
+	color: darken(@color-swatch1, 30%);
+}
+::-moz-placeholder {
+	color: darken(@color-swatch1, 30%);
+}
+:-ms-input-placeholder {
+	color: darken(@color-swatch1, 30%);
+}
+
 // Buttons
 .contactform button.btn,
 button.btn,
@@ -688,6 +702,8 @@ button.btn,
 	-moz-transition: .2s;
 	-ms-transition: .2s;
 	transition: .2s;
+	border-radius: 20px;
+	border: none;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 	}
