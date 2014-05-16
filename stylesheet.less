@@ -226,13 +226,16 @@ hr.line {
 	.widget.companyname a {
 		color: @color-swatch1;
 	}
-	.right {
-		text-align: right;
-		float: right;
-	}
 	.widget.logo {
 		text-align: center;
 	}
+}
+
+.template-phone {
+	float: left;
+	text-align: right;
+	width: 20%;
+	padding: 10px 25px 11px;
 }
 
 .template-feature {
@@ -267,7 +270,6 @@ hr.line {
 }
 
 .header-feature {
-	background: @color-swatch7;
 	position: relative;
 	overflow: hidden;
 	height: 300px;
@@ -314,13 +316,18 @@ hr.line {
 
 .template-nav {
 	float: left;
-	width: 100%;
+	width: 80%;
 	min-height: 49px;
 }
 
-.widget .extendednavigation {
-	text-align: center;
-	border-top: 1px solid lighten(@font-swatch6-color, 20%);
+.header-sub {
+	background-color: @color-swatch7;
+	float: left;
+	width: 100%;
+	h2 {
+		color: @color-swatch6;
+		padding-bottom: 0;
+	}
 }
 
 .widget .extendednavigation ul {

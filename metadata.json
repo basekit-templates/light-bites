@@ -10,13 +10,13 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#659655",
-            "color3":"#659655",
-            "color4":"#13132c",
-            "color5":"#010101",
-            "color6":"#a7a7a7",
-            "color7":"#d35c3a"
+            "color1":"#fbf9f8",
+            "color2":"#70243f",
+            "color3":"#ef5f5b",
+            "color4":"#70243f",
+            "color5":"#3e2a24",
+            "color6":"#ffffff",
+            "color7":"#ef5f5b"
         },
         "Swatch 2": {
             "color1":"#ffffff",
@@ -56,7 +56,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Montserrat / Oswald",
+       "title": "Montserrat / Arvo",
         "font1": {
             "font-family": "\"Montserrat\", \"Trebuchet MS\", Helvetica, sans-serif",
             "font-size": "32px",
@@ -66,7 +66,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "22px",
             "font-weight": "300",
             "line-height": "32px",
@@ -90,7 +90,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "12px",
             "font-weight": "400",
             "line-height": "22px",
@@ -98,7 +98,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "20px",
             "font-weight": "300",
             "line-height": "30px",
@@ -109,7 +109,7 @@
             "background-color-hover": "@color-swatch1"
          },
         "font7": {
-            "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "14px",
             "font-weight": "normal",
             "line-height": "24px",
@@ -127,7 +127,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "22px",
             "font-weight": "500",
             "line-height": "32px",
