@@ -168,7 +168,7 @@ h5 {
 h6 {
 	font-family:@font-swatch6-font-family;
 	font-weight: @font-swatch6-font-weight;
-	color:@font-swatch6-color;
+	color:@font-swatch5-color;
 	line-height:@font-swatch6-line-height;
 	letter-spacing: @font-swatch6-letter-spacing;
 	font-size: @font-swatch6-font-size;
@@ -477,6 +477,7 @@ hr.line {
 .menu-subsection .menu-subsection-promoted .menu-items {
 	background: lighten(@color-swatch5, 75%);
 	border: 1px solid lighten(@color-swatch5, 50%);
+	border-radius: 3px;
 }
 
 .menu-item {
@@ -513,6 +514,7 @@ hr.line {
 .menu-subsection .menu-items {
 	background: lighten(@color-swatch1, 5%);
 	border: 1px solid darken(@color-swatch1, 5%);
+	border-radius: 3px;
 }
 
 .menu-subsection .menu-items {
@@ -613,8 +615,8 @@ textarea,
 .widget.profile form fieldset input {
 	text-indent: 0;
 	padding: 8px 9px 10px;
-	background-color: darken(@color-swatch1, 10%);
-	border: 1px solid darken(@color-swatch1, 15%);
+	background-color: lighten(@color-swatch1, 5%);
+	border: 1px solid darken(@color-swatch1, 5%);
 	outline: none;
 	-webkit-transition: border .2s;
 	-moz-transition: border .2s;
@@ -657,6 +659,8 @@ select {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	position: relative;
+	background-color: darken(@color-swatch1, 10%);
+	border: 1px solid darken(@color-swatch1, 15%);
 	background-image: image('/images/arrow-down.png');
 	background-repeat: no-repeat;
 	background-position: right 12px center;
@@ -693,6 +697,7 @@ button.btn,
 .widget.tweet a,
 .widget.dropbox button,
 .clicktocall a,
+.widget.clicktocall a,
 .signupform fieldset button,
 .blog-search-form button,
 .widget.socialicons span a,
@@ -728,6 +733,10 @@ button.btn,
 	}
 }
 
+.widget.ecombasket .ecombasket-pull {
+	width: auto;
+}
+
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
 	padding: 0;
 }
@@ -755,7 +764,8 @@ button.btn:disabled:hover,
 
 .widget.tweet a,
 .widget.paypalbuynow .widget.button.paypal,
-.widget.dropbox button {
+.widget.dropbox button,
+.widget.clicktocall a {
 	padding-left: 40px;
 	display: inline-block;
 }
@@ -915,7 +925,7 @@ button.btn:disabled:hover,
 
 // 10. Footer
 .template-footer {
-	 background-color: darken(@color-swatch1, 10%);
+	background-color: darken(@color-swatch1, 10%);
 	clear: both;
 	float: left;
 	width: 100%;
@@ -970,15 +980,22 @@ button.btn:disabled:hover,
 			border-top: none;
 		}
 	}
+	.template-header {
+		padding: 10px 20px;
+	}
+	.template-nav {
+		width: 100%;
+	}
+	.template-phone {
+		width: 100%;
+		text-align: left;
+		padding: 10px 0 11px;
+	}
 	.widget.feature .feature-bgimg .content h3 {
 		padding-top: 5px;
 	}
 	.template-header .template-aside {
 		display: none;
-	}
-	.widget.logo {
-		float: none;
-		width: auto;
 	}
 	.widget.profile form fieldset input,
 	.signupform fieldset input,
@@ -999,14 +1016,21 @@ button.btn:disabled:hover,
 	}
 	.widget .extendednavigation {
 		border-bottom: none;
+		a.pull:after {
+			background-color: @color-swatch1;
+			box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
+		}
 	}
-	.widget .extendednavigation ul {
-		padding: 0;
+	.widget .extendednavigation ul li a,
+	.widget .extendednavigation ul li > .text {
+		padding-left: 0;
+		padding-right: 0;
 	}
+
 	.widget .extendednavigation ul li,
 	.widget .extendednavigation ul.align-left li {
 		padding: 0;
-		border-bottom: 1px solid lighten(@font-swatch6-color, 20%);
+		border-bottom: 1px solid darken(@color-swatch7, 5%);
 	}
 	.widget .extendednavigation ul li.folder:hover ul {
 		left: 0;
@@ -1014,24 +1038,27 @@ button.btn:disabled:hover,
 	.widget .extendednavigation ul li.folder {
 		margin-right: 0;
 	}
-	.template-nav {
-		float: none;
-		width: auto;
-	}
-	.main-wrap {
-		width: 100%;
-	}
 	.widget .extendednavigation ul li.folder:hover ul {
 		margin: 1px 0 0;
 		border: none;
 	}
 	.widget .extendednavigation ul li.folder:hover a {
-		padding: 10px 25px;
+		padding: 10px 10px;
 	}
 	.widget.responsiveslideshow .description {
 		display: inline-block;
 	}
-	.menu .main, .main {
-		padding: 0 20px;
+	.main {
+		padding: 10px 20px 25px;
+	}
+}
+
+@media @mobile {
+	.template-feature {
+		display: none;
+	}
+	.main-wrap {
+		width: 100%;
+		margin-left: 0;
 	}
 }
