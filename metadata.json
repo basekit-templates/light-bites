@@ -20,40 +20,40 @@
             "color7":"#ef5f5b"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#6ba47b",
-            "color3":"#6ba47b",
-            "color4":"#3d3247",
-            "color5":"#222222",
-            "color6":"#b2b2b2",
-            "color7":"#d9b853"
+            "color1":"#fbf9fa",
+            "color2":"#72426e",
+            "color3":"#e377af",
+            "color4":"#72426e",
+            "color5":"#483f42",
+            "color6":"#ffffff",
+            "color7":"#e377af"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#cfa531",
-            "color3":"#cfa531",
-            "color4":"#4f3f13",
-            "color5":"#221b08",
-            "color6":"#e0c57c",
-            "color7":"#d5b04a"
+            "color1":"#f8f9fc",
+            "color2":"#325982",
+            "color3":"#6874f2",
+            "color4":"#325982",
+            "color5":"#363354",
+            "color6":"#ffffff",
+            "color7":"#6874f2"
         },
         "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#a06678",
-            "color3":"#a06678",
-            "color4":"#2c412a",
-            "color5":"#1a1a1a",
-            "color6":"#b0b0b0",
-            "color7":"#634dd7"
+            "color1":"#ecefef",
+            "color2":"#2e7d72",
+            "color3":"#61c5e7",
+            "color4":"#2e7d72",
+            "color5":"#2f4251",
+            "color6":"#f2f2f2",
+            "color7":"#61c5e7"
         },
         "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#559695",
-            "color3":"#559695",
-            "color4":"#2c1326",
-            "color5":"#010101",
-            "color6":"#a7a7a7",
-            "color7":"#8cd33a"
+            "color1":"#efedec",
+            "color2":"#7d322e",
+            "color3":"#e79d61",
+            "color4":"#7d322e",
+            "color5":"#51452f",
+            "color6":"#f2f2f2",
+            "color7":"#e79d61"
         }
     },
     "fontSwatch": {
