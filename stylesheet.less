@@ -521,7 +521,7 @@ hr.line {
 .blog-post-metadata,
 .menu-subsection .menu-items {
 	background: lighten(@color-swatch1, 5%);
-	border: 1px solid darken(@color-swatch1, 5%);
+	border: 1px solid darken(@color-swatch1, 15%);
 	border-radius: 3px;
 }
 
@@ -624,7 +624,7 @@ textarea,
 	text-indent: 0;
 	padding: 8px 9px 10px;
 	background-color: lighten(@color-swatch1, 5%);
-	border: 1px solid darken(@color-swatch1, 5%);
+	border: 1px solid darken(@color-swatch1, 15%);
 	outline: none;
 	-webkit-transition: border .2s;
 	-moz-transition: border .2s;
@@ -633,7 +633,7 @@ textarea,
 	border-radius: 3px;
 	line-height: 18px;
 	&:hover, &:focus {
-		border: 1px solid darken(@color-swatch1, 20%);
+		border: 1px solid darken(@color-swatch1, 25%);
 	}
 }
 
@@ -716,7 +716,8 @@ button.btn,
 .widget.ecombasket .ecombasket-list-container .ecombasket-checkout-wrap .ecombasket-checkout-link,
 .widget.ecomcheckout table tr td .checkout-quantitybtn button,
 .widget.ecomcheckout .checkout-order-button,
-.widget.ecombasket .ecombasket-pull {
+.widget.ecombasket .ecombasket-pull,
+.widget.button button {
 	display: inline-block;
 	cursor: pointer;
 	background-color: @font-swatch7-background-color;
@@ -735,6 +736,7 @@ button.btn,
 	transition: .2s;
 	border-radius: 3px;
 	border: none;
+	margin: 10px 0;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 		color:@font-swatch7-color;
@@ -965,7 +967,7 @@ button.btn:disabled:hover,
 }
 
 .widget.ecomproductslist .ecom-productslist-image-wrap {
-	border: 1px solid darken(@color-swatch1, 5%);
+	border: 1px solid darken(@color-swatch1, 15%);
 }
 
 // 11. Misc
