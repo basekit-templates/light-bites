@@ -273,9 +273,6 @@ hr.line {
 	background-color: @color-swatch7;
 	float: left;
 	width: 100%;
-	div:only-child {
-		width: 100%;
-	}
 }
 
 .template-feature {
@@ -352,16 +349,15 @@ hr.line {
 }
 
 .header-sub .extendednavigation {
-	float: left;
-	width: 70%;
 	min-height: 49px;
 }
 
 .header-sub .profile {
-	float: left;
+	display: table-cell;
+	vertical-align: top;
+
 	text-align: right;
-	width: 30%;
-	padding: 10px 25px 11px;
+	padding: 8px 10px 11px;
 	font-family:@font-swatch6-font-family;
 	font-weight: @font-swatch6-font-weight;
 	color:@font-swatch6-color;
