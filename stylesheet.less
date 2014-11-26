@@ -327,7 +327,7 @@ hr.line {
 		}
 		.bk-profile-socialicons {
 			margin: 0;
-			.bk-profile-socialicons a {
+			a {
 				text-indent: 9999px;
 				white-space: nowrap;
 				overflow: hidden;
@@ -341,8 +341,17 @@ hr.line {
 		a, p {
 			color: @font-swatch6-color;
 		}
-		form button {
-			background-color: lighten(@font-swatch7-background-color, 5%);
+	}
+	.form-group {
+		input {
+			line-height: 26px;
+		}
+		button, button.btn, .btn {
+			background-color: lighten(@color-swatch7, 5%);
+			border: darken(@color-swatch7, 3%);
+			&:hover {
+				background-color: darken(@color-swatch7, 5%)
+			}
 		}
 	}
 }
