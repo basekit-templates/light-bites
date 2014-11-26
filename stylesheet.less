@@ -318,6 +318,37 @@ hr.line {
 	margin: 0 auto;
 }
 
+// Widget profile
+
+.header-sub, .footer-content {
+	.widget.profile {
+		.bk-profile-address p {
+			padding-bottom: 0;
+		}
+		.bk-profile-socialicons {
+			margin: 0;
+			.bk-profile-socialicons a {
+				text-indent: 9999px;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+.header-sub .widget.profile {
+	.bk-profile-address, .bk-profile-email, ul.twitter .twitter-content {
+		a, p {
+			color: @font-swatch6-color;
+		}
+		form button {
+			background-color: lighten(@font-swatch7-background-color, 5%);
+		}
+	}
+}
+
+
+
 // 3. Navigation
 .nav {
 	font-family: 'Oswald', sans-serif;
@@ -348,8 +379,6 @@ hr.line {
 .header-sub .profile {
 	display: table-cell;
 	vertical-align: top;
-	white-space: nowrap;
-
 	text-align: right;
 	padding: 8px 10px 11px;
 	font-family:@font-swatch6-font-family;
