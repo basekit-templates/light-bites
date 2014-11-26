@@ -171,13 +171,21 @@ p, ul, ol, li, .p-font, time.blog-post-publish-date {
 p,
 .contactform label,
 .twitter ul li a,
-.signupform label {
+.signupform label,
+.blog-search-form label {
 	font-family:@font-swatch5-font-family;
 	font-weight: @font-swatch5-font-weight;
 	color:@font-swatch5-color;
 	line-height:@font-swatch5-line-height;
 	letter-spacing: @font-swatch5-letter-spacing;
 	font-size: @font-swatch5-font-size;
+}
+
+.signupform fieldset label,
+.blog-search-form label {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 blockquote {
@@ -671,6 +679,11 @@ div.blog-post-feature-image-wrap {
 	}
 }
 
+.blog-post-sharing {
+	display: inline-block;
+	margin: 2em 0;
+}
+
 // 8. Forms
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
 .widget.ecomcheckout .delivery select,
@@ -694,8 +707,12 @@ textarea,
 	transition: border .2s;
 	border-radius: 3px;
 	line-height: 18px;
+	height: 42px;
 	&:hover, &:focus {
 		border: 1px solid darken(@color-swatch1, 25%);
+	}
+	@media @tablet {
+		width: 100%;
 	}
 }
 
@@ -710,35 +727,46 @@ select {
 	text-overflow: '';
 }
 
-.widget.profile, .widget.signupform, .widget.blogsearch {
+.widget.profile, .widget.signupform {
 	input[type=email], input[type=search] {
 		width: 100%;
 		height: auto;
+		margin-bottom: 10px;
 	}
+}
+
+.widget.ecomproductslist .productlist-display-form .form-group input, .widget.blogsearch .blog-search-form .form-group input {
+	-webkit-appearance:none;
+     height: 42px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    @media @mobile {
+    	width: 100%;
+    	margin-right: 0;
+    }
 }
 
 textarea {
 	resize: vertical;
 }
 
-
 .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
 .widget.ecomcheckout .delivery select,
 select {
 	cursor: pointer;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
 	position: relative;
 	background-color: darken(@color-swatch1, 10%);
 	border: 1px solid darken(@color-swatch1, 15%);
-	background-image: image('/images/arrow-down.png');
-	background-repeat: no-repeat;
-	background-position: right 12px center;
-	background-position-x: 95%;
-	background-position-y: 53%;
 	margin-bottom: 12px;
 	padding-right: 33px;
 	border-radius: 3px;
+	height: 42px;
+	@media @tablet {
+		width: 100%;
+	}
 }
 
 input[type="search"]::-webkit-search-decoration {
@@ -798,13 +826,16 @@ button.btn,
 	transition: .2s;
 	border-radius: 3px;
 	border: none;
-	margin: 10px 0;
 	&:hover {
 		background-color: @font-swatch7-background-color-hover;
 		color:@font-swatch7-color;
 	}
 }
 
+.widget.ecomproductslist .productlist-display-form .form-group button, .widget.blogsearch .blog-search-form .form-group button {
+	vertical-align: top;
+	height: 42px;
+}
 
 
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
