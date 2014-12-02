@@ -212,9 +212,22 @@ a, .widget.twitter ul li a {
 
 .main-wrap {
 	background-color: @color-swatch1;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.widget.feature + .main-wrap {
+	background-color: @color-swatch1;
 	float: left;
 	margin-left: 25%;
+	max-width: 100%;
 	width: 75%;
+}
+
+.widget.feature {
+	position: fixed;
+ 	height: 100%;
+	width: 25%;
 }
 
 .template-header,
@@ -264,16 +277,6 @@ hr.line {
 	float: left;
 	width: 100%;
 	display: table;
-}
-
-.template-feature {
-	position: fixed;
-	height: 100%;
-	width: 25%;
-	.widget.feature,
-	.widget.feature .feature-bgimg {
-		height: 100%;
-	}
 }
 
 .template-aside, .widget.logo {
@@ -1205,8 +1208,12 @@ button.btn:disabled:hover,
 		float: left;
 		width: 100%;
 	}
-	.template-feature {
+	.widget.feature {
 		display: none;
+	}
+	.widget.feature + .main-wrap {
+		margin-left: 0;
+		width: 100%;
 	}
 	.main-wrap {
 		width: 100%;
