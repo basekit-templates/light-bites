@@ -208,6 +208,8 @@ a, .widget.twitter ul li a {
 	}
 }
 
+
+
 .main-wrap, .widget.feature.bk-tpl-hidden + .main-wrap {
 	background-color: @color-swatch1;
 	float: initial;
@@ -461,6 +463,13 @@ hr.line {
 		left: 4px;
 		top: 7px;
 		width: 22px;
+	}
+}
+
+.widget.extendednavigation .bk-overlay {
+	@media @tablet {
+		width: 100%;
+		left: 0!important;
 	}
 }
 
@@ -1120,13 +1129,14 @@ button.btn:disabled:hover,
 			line-height: bkscale(@font-swatch8-line-height, 0.5);
 		}
 		h3 {
-			font-size: bkscale(@font-swatch9-font-size, 0.5);
-			line-height: bkscale(@font-swatch9-line-height, 0.5);
+			font-size: bkscale(@font-swatch9-font-size, 0.7);
+			line-height: bkscale(@font-swatch9-line-height, 0.7);
 			border-top: none;
 		}
 	}
 	.template-header {
 		padding: 10px 20px;
+		min-height:150px;
 	}
 	.template-nav {
 		width: 100%;
@@ -1210,6 +1220,7 @@ button.btn:disabled:hover,
 	.header-sub .profile {
 		float: left;
 		width: 100%;
+		text-align:left;
 	}
 	.widget.feature {
 		display: none;
@@ -1240,7 +1251,10 @@ button.btn:disabled:hover,
 	}
 }
 
-
+.widget.companyname a {
+	font-size: bkscale(@font-swatch10-font-size, 0.9);
+	line-height: bkscale(@font-swatch10-line-height, 0.9);
+}
 
 // ------------------------------------------
 // #Default page sticky footer
