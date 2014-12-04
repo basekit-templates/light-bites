@@ -159,10 +159,6 @@ p, ul, ol, li, .p-font, time.blog-post-publish-date {
     font-size: bkscale(@font-swatch5-font-size, 0.9);
     line-height: bkscale(@font-swatch5-line-height, 0.9);
   }
-  @media @mobile {
-    font-size: bkscale(@font-swatch5-font-size, 0.8);
-    line-height: bkscale(@font-swatch5-line-height, 0.8);
-  }
 }
 
 
@@ -696,19 +692,42 @@ hr.line {
 	padding-bottom: 10px;
 }
 
+// Menu sections navigation
+
 .widget.menusections {
-	text-align: center;
-	margin-left: 0;
-	margin-right: 0;
-	.menu-section-list {
-		border-bottom: 1px solid darken(@color-swatch1, 5%);
-	}
-	ul li {
-		margin: 0;
-	}
-	a {
-		padding: 10px 20px;
-	}
+    text-align: center;
+    padding: 0.5em 0 0;
+    @media @tablet {
+        margin-top: 1.5em;
+    }
+    @media only screen and (max-width: 550px) {
+        padding:0;
+        margin-top:0;
+        padding: 0 0 0;
+    }
+    ul {
+        display: table;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 0 15px 10px 0;
+            margin: 0;
+            &:last-child {
+                padding-right: 0;
+                @media only screen and (max-width: 550px) {
+                    border-bottom: 1px solid darken(@color-swatch1,7%);
+                }
+            }
+            @media only screen and (max-width: 550px) {
+                width: 100%;
+                border-top: 1px solid darken(@color-swatch1,7%);
+                padding: 15px 0 10px 0;
+            }
+        }
+    }
 }
 
 // 6. Blog List
